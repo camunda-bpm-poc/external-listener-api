@@ -7,8 +7,8 @@ logging:
 
 camunda.bpm:
   admin-user:
-    id: demo
-    password: demo
+    id: admin
+    password: admin
   filter:
     create: All tasks
 

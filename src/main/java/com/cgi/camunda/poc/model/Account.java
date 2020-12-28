@@ -7,4 +7,5 @@ public class Account {
     private String ssn;
     private String accountNumber;
     private String paymentAmount;
+    private String paymentDate;
 }
