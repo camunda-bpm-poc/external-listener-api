@@ -1,0 +1,27 @@
+server.port: 8082
+
+logging:
+  level:
+    org.springframework: INFO
+    org.apache.kafka: INFO
+
+camunda.bpm:
+  admin-user:
+    id: demo
+    password: demo
+  filter:
+    create: All tasks
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: 10.105.22.61:9092
+      group-id: group_id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: 10.105.22.61:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
